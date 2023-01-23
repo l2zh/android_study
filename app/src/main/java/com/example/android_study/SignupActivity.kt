@@ -28,7 +28,7 @@ class SignupActivity : AppCompatActivity() {
             }
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-                if( id.length() < 11 && id.length() > 5 ) {
+                if( id.length()in 6..10 ) {
                     pw.isEnabled = true
                 }
             }
@@ -41,7 +41,7 @@ class SignupActivity : AppCompatActivity() {
             }
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-                    if(pw.length() > 7 && pw.length() < 13){
+                    if(pw.length() in 8..12){
                         btn_signup.isEnabled = true
                     }
             }
