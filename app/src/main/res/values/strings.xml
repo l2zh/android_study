@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">android_study</string>
+    <string name="signin_title">MUSINSA</string>
+    <string name="sign_id">ID</string>
+    <string name="sign_idhint">아이디를 입력하세요</string>
+    <string name="sign_password">Password</string>
+    <string name="sign_passhint">비밀번호를 입력하세요</string>
+    <string name="signin_in">SIGN IN</string>
+    <string name="signin_up">SIGN UP</string>
+    <string name="signup_title">SIGN UP</string>
+    <string name="signup_mbti">MBTI</string>
+    <string name="signup_mbtihint">MBTI를 입력하세요</string>
 </resources>
