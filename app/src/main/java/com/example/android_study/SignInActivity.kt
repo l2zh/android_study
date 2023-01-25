@@ -33,9 +33,15 @@ class SignInActivity: AppCompatActivity() {
         val toss_mbti = intent.getStringExtra("mbti")
 
 
+        fun movetohome(){
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
         btn_signin.setOnClickListener{
             if (toss_id == signin_id.text.toString() && toss_pw == signin_pw.text.toString()){
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_LONG).show()
+                movetohome()
             }
             else{
                 Toast.makeText(this, "로그인 실패", Toast.LENGTH_LONG).show()
