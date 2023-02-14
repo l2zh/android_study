@@ -9,7 +9,7 @@
         android:id="@+id/iv_bodypic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/eye"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

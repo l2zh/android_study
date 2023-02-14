@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.example.android_study.databinding.FragmentGalleryBinding
 import com.example.android_study.databinding.FragmentHomeBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class GalleryFragment : Fragment() {
     private var _binding: FragmentGalleryBinding? = null
@@ -36,6 +39,11 @@ class GalleryFragment : Fragment() {
         val adapter = body_adapter(requireContext())
         binding.vpBody.adapter = adapter // adapter 연결
         adapter.setbodyList(mockRepoList)
+
+
+        TabLayoutMediator(binding.tabLayout ,binding.vpBody)
+        { tab, position ->}.attach()
+
     }
 
     override fun onCreateView(
